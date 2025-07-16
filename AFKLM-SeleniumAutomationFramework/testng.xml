@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite">
+<listeners>
+<listener class-name="utilities.extentReportUtility"/>
+</listeners>
+<groups>
+<run>
+<include name="regression"/>
+</run>
+</groups>
+  <test thread-count="5" name="Test">
+    <classes>
+     <class name="testCases.AddAWB"/>
+       <class name="testCases.ViewAWB"/>
+        <class name="testCases.CaptureFlown"/>
+         <class name="testCases.ViewFlown"/> 
+     
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

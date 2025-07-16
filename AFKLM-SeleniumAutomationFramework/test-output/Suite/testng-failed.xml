@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="utilities.extentReportUtility"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testCases.CaptureFlown">
+        <methods>
+          <include name="captureFlown"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- testCases.CaptureFlown -->
+      <class name="testCases.ViewFlown">
+        <methods>
+          <include name="viewFlown"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- testCases.ViewFlown -->
+      <class name="testCases.AddAWB">
+        <methods>
+          <include name="addAWB"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- testCases.AddAWB -->
+      <class name="testCases.ViewAWB">
+        <methods>
+          <include name="searchAWB"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- testCases.ViewAWB -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
